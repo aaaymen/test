@@ -1,8 +1,9 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);  
+client.on("ready", () => {
+  console.log("Vulnix | Logged in! Server count: ${client.guilds.size}");
+  client.user.setGame(`bot arab dz |${prefix}help |→ ${prefix}inv`);
 });
 
  
