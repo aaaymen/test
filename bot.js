@@ -1,9 +1,9 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
 
-console.log("Welcome Again !");
+
  
- client.on("guildMemberRemove", member => {
+ client.on('guildMemberRemove', member => {
   member.createDM().then(function (channel) {
   return channel.send(` 
 **
@@ -16,7 +16,7 @@ console.log("Welcome Again !");
 
 })
  
-client.on("guildMemberAdd", member => {
+client.on('guildMemberAdd', member => {
   member.createDM().then(function (channel) {
   return channel.send(` 
 **
